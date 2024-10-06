@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #eaeaea;  /* Light gray background for a softer look */
+    color: #444;          /* Darker text for better readability */
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background: #fff;     /* Clean white background for the input box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;         /* Adjust width for a spacious layout */
+    text-align: center;
+}
+
+.login h1 {
+    color: #333;          /* Darker text color for better contrast */
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #4a77d4; /* Blue border on focus */
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4a77d4; /* Primary button color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #3762bc; /* Darker shade on hover */
+}
+
+.btn-block {
+    width: 100%;
+}

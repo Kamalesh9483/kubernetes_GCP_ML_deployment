@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict House Price</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login">
+        <h1>Predict House Price</h1>
+        <form action="{{ url_for('index') }}" method="POST">
+            <input type="text" name="size" placeholder="Size (sq ft, integer)" required="required" /><br>
+            <input type="text" name="rooms" placeholder="Rooms (integer)" required="required" /><br>
+            <input type="text" name="age" placeholder="Age (years, integer)" required="required" /><br>
+            <input type="text" name="garage_size" placeholder="Garage Size (sq ft, integer)" required="required" /><br>
+            <input type="text" name="location_quality" placeholder="Location Quality (1-5, integer)" required="required" /><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <br>
+        {% if prediction is not none %}  
+            <h2>Predicted Price: {{ prediction }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
