@@ -2,7 +2,7 @@ ML Prediction App
 This document outlines the process for deploying a Machine Learning prediction application using Docker, Google Cloud Build, Google Container Registry, and Google Kubernetes Engine (GKE).
 
 Steps:
-![image](https://github.com/user-attachments/assets/3d80d33a-2ee6-4cb9-8c6c-391da59b263d)
+![{EC665809-9E96-4610-9108-B469766E9913}](https://github.com/user-attachments/assets/3991908a-487b-4801-b9c8-d17f43ec384b)
 
 Prediction after deployment:
 ![image](https://github.com/user-attachments/assets/1b9b1514-9245-403e-8fcd-735192046cb1)
