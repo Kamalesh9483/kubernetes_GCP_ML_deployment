@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: price-prediction-app
+spec:
+  type: LoadBalancer
+  selector:
+    app: price-prediction-app
+  ports:
+  - port: 80  # The external port to expose
+    targetPort: 8080  # The port your application listens to inside the container

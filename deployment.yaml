@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: price-prediction-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: price-prediction-app
+  template:
+    metadata:
+      labels:
+        app: price-prediction-app
+    spec:
+      containers:
+      - name: price-prediction-app
+        image: gcr.io/kubernetes-demo/price-prediction-app:latest
+        ports:
+        - containerPort: 8080  
+        env:
+        - name: PORT
+          value: "8080"
