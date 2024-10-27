@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: price-prediction-app
-        image: gcr.io/kubernetes-demo/price-prediction-app:latest
+        image: gcr.io/kubernetes-demo-prediction/price-prediction-app:latest
         ports:
         - containerPort: 8080  
         env:

@@ -2,15 +2,17 @@
 
 ## Steps:
 1. git clone https://github.com/Kamalesh9483/kubernetes_GCP_ML_deployment.git
-2. export PROJECT_ID=kubernetes-demo
-3. gcloud builds submit --tag gcr.io/${PROJECT_ID}/price-prediction-app .
-4. gcloud container clusters create kubernetes-cluster \
+2. export PROJECT_ID=kubernetes-demo-prediction
+3. docker build -t gcr.io/${PROJECT_ID}/price-prediction-app .
+4. docker images
+5. gcloud auth configure-docker
+6. docker push gcr.io/${PROJECT_ID}/price-prediction-app:latest
+7. gcloud container clusters create kubernetes-cluster \
     --num-nodes 1 \
-    --enable-basic-auth \
-    --issue-client-certificate \
     --zone us-central1-a
-5. kubectl apply -f deployment.yaml
-6. kubectl get pods
-7. kubectl apply -f service.yaml
-8. kubectl get services
+8. kubectl apply -f deployment.yaml
+9. kubectl get pods
+10. kubectl apply -f service.yaml
+11. kubectl get services
+
 
