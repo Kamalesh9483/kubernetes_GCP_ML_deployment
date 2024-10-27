@@ -7,9 +7,7 @@
 ## Prediction after deployment:
 ![{72259FE4-488A-40AA-B97A-37A14CF0181F}](https://github.com/user-attachments/assets/a1a51b47-82c4-40b9-8e80-677d6f3594c9)
 
-
-https://github.com/user-attachments/assets/a9339440-ad5f-44c8-a413-de43e6edec9c
-
+https://github.com/user-attachments/assets/1b168071-ee76-4fbc-918b-888bc55115d0
 
 ## GCP codes:
 1. git clone https://github.com/Kamalesh9483/kubernetes_GCP_ML_deployment.git
